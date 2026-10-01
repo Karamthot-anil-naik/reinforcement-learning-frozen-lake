@@ -1,0 +1,23 @@
+[project]
+name = "game"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Karamthot Anil Naik", email = "kanilnaik2005@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium[toy-text]>=1.3.0",
+    "numpy>=2.5.3",
+    "opencv-python>=5.0.0.93",
+    "pandas>=3.0.6",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+game = "game:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
